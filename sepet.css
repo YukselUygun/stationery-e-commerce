@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   background-color: beige;
+}
+
+.containerItem{
+    margin-left: 150px;
+}
+
+.card{
+    padding: 50px;
+}
+
+.couponContainer{
+    display: flex; 
+}
+.butonKutu{
+margin-left: 30px;
+
+margin-bottom: 30px;
+margin-top: 60px;
+padding: 10px;
+}
+
+.couponContainer input {
+  width: 150px; /* İstediğiniz genişliği ayarlayabilirsiniz */
+  margin-bottom: 0px; /* Alt boşluk ekleyerek butona olan mesafeyi ayarla */
+  
+}
+
+.totalContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+hr {
+    border: 0; 
+    height: 3px; 
+    background-color: #333; 
+    margin: 10px 0;
+}
+
+#quantity{
+    text-align: center;
+}
+
+#quantity2{
+    text-align: center;
+}
+
+#quantity3{
+    text-align: center;
+}
+
+
+
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #83c9f7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #3d7aa3;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #3d7aa3;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+  }
+  #bar{
+    display: none;
+  }
+#closebtn{
+    display: none;
+}
+footer{
+    display: block;
+}
+  
+footer .col1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  footer .col1 .col{
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    margin-bottom: 20px ;
+  } 
+  footer .col1 .col .col-text{
+    
+    font-size: 12px;
+  }
+  footer .logo{
+    margin-bottom:30px;
+    text-align: center;
+  }
+  .section-p1 .col .logo {
+    width: 100px; 
+    
+  } 
+  footer h4{
+    font-size: 8px;
+    padding-bottom: 5;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  footer p{
+    font-size: 8px;
+    
+    margin: 0 0 8px 0;
+  }
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  footer .follow{
+    margin-top: 20px;
+    text-align: center;
+  }
+  footer .icon i{
+    padding-left: 30px;
+    color: blue;
+    font-size: 30px;
+  }
+  footer .follow h4{
+    padding-bottom: 30px;
+  }
+  footer .col1 .logo{
+    width: 100px;
+    height: 100px;
+  }
+  footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+  }
+  footer .install img{
+    margin: 10px 0 15px 0;
+  }
+  footer .follow i:hover, footer a:hover{
+    color: #088178;
+  }
+  footer .copyright{
+    width: 100%;
+    text-align: center;
+  }
+@media (max-width:992px) {
+  .container .row{
+    display: block;
+  }
+  .container .row .col-md-3{
+    display: flex;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 40%;
+  }
+  .container .row .col-md-3 .kuponkutu .couponContainer{
+    gap: 10px;
+    
+  }
+  
+}
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        z-index: 1000; /* Ensure the navigation bar is above the form */
+    }
+    #bar{
+        display: block  ;
+    }
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    
+    
+}
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  #close{
+    display: flex;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+
+  }
+  @media(max-width:477px){
+    .section-p1{
+        padding: 20px;
+      }
+      #header{
+        padding: 10px 30px;
+      }
+      h1{
+        font-size: 38px;
+      }
+      h2{
+        font-size: 32px;
+      }
+      footer .col .follow{
+        width: 80%;
+      }bar
+      footer .col .follow .icon{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      
+        footer .col .follow .icon i{
+          padding: 10px;
+        }
+      footer .col{
+        width: 80;
+      }
+      footer .install{
+        text-align: start;
+      }
+    }

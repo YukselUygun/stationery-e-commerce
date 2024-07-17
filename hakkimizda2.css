@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* background-color: rgb(218, 218, 218); */
+}
+
+/* Global Styles */
+
+.hakkinda-container {
+    background-color: rgba(145, 164, 169, 0.641);
+    padding: 45px; /* Örneğin, içeriği daha dar yapabilirsin */
+    margin: 140px 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+button.normal{
+  font-size: 14px;
+  font-weight:600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+button.white{
+  font-size: 13px;
+  font-weight:600;
+  padding: 11px 18px;
+  color: #110404;
+  background-color: tomato;
+  cursor: pointer;
+  border: 1px solid #100404;
+  outline: none;
+  transition: 0.2s;
+}
+body {
+    background: #848484;
+    background-image: url("kisspng-school-supplies-hand-painted-background-pencils-5aa289eb3ee296.0233760715206015792576.jpg");
+    margin: auto;
+    width: 100%;
+}
+.ana {
+    display: flex;
+     /* Mobil görünümde dikey sıralama için */
+    width: 100%;
+}
+
+.ana-1{
+    width: 50%;     /* Mobilde tam genişlik */
+    box-sizing: border-box; /* Padding ve border'ı içeriye almak için */
+}
+.ana-2 {
+    width: 70%; /* Mobilde tam genişlik */
+    box-sizing: border-box; /* Padding ve border'ı içeriye almak için */
+}
+
+
+/*Header Start*/
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #83c9f7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style:none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: #3d7aa3;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #3d7aa3;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+
+ #feature{
+display: flex; 
+align-items: center; 
+justify-content: space-between; 
+flex-wrap: wrap; 
+text-align: center; 
+} 
+
+
+ 
+footer{
+  display: block;
+}
+
+footer .col1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+footer .col1 .col{
+  display: flex;
+  flex-direction: column ;
+  align-items: flex-start;
+  margin-bottom: 20px ;
+} 
+footer .col1 .col .col-text{
+  
+  font-size: 12px;
+}
+footer .logo{
+  margin-bottom:30px;
+  text-align: center;
+}
+.section-p1 .col .logo {
+  width: 100px; 
+  
+} */
+footer h4{
+  font-size: 8px;
+  padding-bottom: 5;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+footer p{
+  font-size: 8px;
+  
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+footer .follow{
+  margin-top: 20px;
+  text-align: center;
+}
+footer .icon i{
+  padding-left: 30px;
+  color: blue;
+  font-size: 30px;
+}
+footer .follow h4{
+  padding-bottom: 30px;
+}
+footer .col1 .logo{
+  width: 100px;
+  height: 100px;
+}
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+footer .follow i:hover, footer a:hover{
+  color: #088178;
+}
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
+.ana-1 img{
+  max-width: 100%;
+  height: 100%;
+}
+@media (max-width:799px) {
+  .ana{
+    width: 100%;
+  }
+  .ana-1{
+    width: 0%;
+  }
+  .ana-2{
+    width: 100%;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar.active{
+    right: 0;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  #close{
+    display: flex;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+
+  }
+  #lg-bag{
+    display: none;
+  }
+ 
+
+.follow {
+  background: rgb(208, 208, 208);
+  margin: 20px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+footer .col{
+ position: relative;
+}
+footer .col .follow{
+  width: 100%;
+  text-align: center;
+}
+
+
+.follow h4{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+.follow .icon{
+  margin: 30px;
+  display: flex;justify-content: space-between;
+}
+.follow .icon i{
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.follow .icon i:hover{
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+
+}
+@media(max-width:477px){
+  .section-p1{
+    padding: 20px;
+  }
+  #header{
+    padding: 10px 30px;
+  }
+ 
+ 
+  footer .col .follow{
+    width: 80%;
+  }
+  footer .col .follow .icon{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+    footer .col .follow .icon i{
+      padding: 10px;
+    }
+  footer .col{
+    width: 80;
+  }
+  footer .install{
+    text-align: start;
+  }
+}
+
+@media (max-width:463px){
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
